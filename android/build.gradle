@@ -1,0 +1,53 @@
+group 'unic.cicoco.flutter_obs_client_plugin'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.wesine.com:8081/nexus/content/groups/public'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 1, 'minutes'
+}
+
+android {
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+dependencies {
+    implementation 'com.huaweicloud:esdk-obs-android:3.22.3'
+    implementation 'com.wesine.library.common:common-library:3.0.1-SNAPSHOT'
+    implementation 'com.wesine.library.common:log-library:3.0.0-SNAPSHOT'
+    api 'com.wesine.saas.tequila.security.sdk:library:2.0.0-SNAPSHOT'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+}
