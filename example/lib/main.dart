@@ -104,7 +104,7 @@ class _TestPageState extends State<TestPage> {
         String endpoint = "https://obs.cn-north-4.myhuaweicloud.com";
         String token =
             "gQpjbi1ub3J0aC00inBtDENiyBBpLCWnkxv5sUql-B_FDdn-GBzmoOA3cKqIpkTmx8W36Gl2UInPxCn_9H3EtrLOQTfDyiqo3_fTG8iKrCfpjLxDgp3jFk0eqmdStGDwGrji7AxfxovPycXP6DrlIMZ69Ymq9lg6sTOk9Vg20J7pjeb3EYuOnFyfUxhbQFiVR0O9Xe0-occQBL2ND6xEEmKDErYdfkqfNjHgmsnPmqu7f-EQk7Z8mrXOzZC30G-qiDqzzv2VtwnlSxbtGHYoUnaF_P4omRqFVJ4rB0uPTQl7pSSOMmLgtGm9kpIVTtlLCw4-aiOZ6VE-mZfns2Tzvsf9gm_uN6H8T9twUPdp0ivSV66QhKll6_cZk_tGD5cQ5CKHO_XgQXb2KH-D_JIKvHqaGDhyhVWGOIHXBP-aqNnSoAayYQ_F1FcIXkqQzUhBMeR0FVDdJJdALlGhlTcxR2Q8MdCrIhfg8wxT296i6awqs6_wjLPRUG-ZaPdG9kwLCT2HYt9mgDjCDM0kQ2QXZmAOOl3fX7bcOkMSXaihFYZLa46wHHUU2YlxKuupNgpeWWm_AZELWGwMreXjSzfGNcKCs7Q06zpltsgB-38_doDr8EYBCVeXM-VYT2iCvSByK5PlEVx2HH7hugbJQvLk8PChIsIb3uGDbQ9zR1Z4fqXOwPiVfB7BLEQQtkGh0hR9UhJ6vvhwfwQnGpVD4kFI7grMImohgZw5TAF2jlAy4wLhvXD1jNxNx7FzCbgLEyrgSNJdA-3E93b80-WlQDDvzXfpnlTpcO_Co4gJRo0=";
-        String bucket = "wmsps";
+        String bucket = "xxxx";
 
         ObsRequest request = ObsRequest(
             filePath: filePath, accessKey: ak, secretKey: sk, endpoint: endpoint, bucket: bucket, securityToken: token);
